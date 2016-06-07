@@ -1,0 +1,122 @@
+
+//LAYOUT
+
+.l-login--border{
+    margin: 2em 0;
+    padding: .90em;
+    border: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.75);
+    border-radius: 0.8em;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login--border--extended {
+  height: 17em;
+}
+
+.l-login-center {
+  margin: 0 auto;
+  float: none;
+}
+
+.l-login {
+  background-color: #fff;
+}
+
+.l-center {
+  text-align: center;
+}
+
+.l-left {
+ float: left;
+}
+
+.l-right {
+  float: right;
+}
+.fieldset--extended {
+  height: 9em;
+}
+
+//MODULES
+.btn--wide{
+    border-radius: 0.33em;
+    width: 100%;
+}
+
+.btn--med{
+	border-radius: 0.33em;
+	margin: 1em;
+}
+
+a.btn--lost {
+font-size: .9em;
+font-weight: 100;
+cursor: pointer;
+display: block;
+border-radius: 0.33em;
+padding: 0.25em 20px 0.333em 0.5em;
+color: black;
+background: url(../../images/br_down.png) no-repeat right 60%;
+}
+
+.input--rounded {
+  border-radius: 0.417em;
+}
+
+.feild--flex{
+display: flex;
+max-height: 2.7em;
+justify-content: initial;
+margin: 1em .5em;
+}
+
+.label--flex {
+  width: 20%;
+}
+
+.input--flex {
+  width: 85%
+}
+
+
+
+// THEME
+//fonts
+$header-font : "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+$primary-font : Verdana, Arial, Helvetica, sans-serif;
+
+//color scheme
+$gray-light-4 : #BFC7CC; //border
+$gray-dark-3 : #333333;
+$gray-dark-4 : #505050;
+$light-blue : #368BC0;
+$lighter-blue : #57ACD7;
+$dark-blue : #1669AA;
+$light-red : #B12525;
+$dark-red : #830707;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-style: $header-font;
+}
+
+body{
+  font-style: $primary-font;
+}
+
+.header--white{
+  color: #fff;
+}
+
+.demo-animate{
+  background-color: green;
+}
+// 
+// body{
+//   background: #70828f;
+// }

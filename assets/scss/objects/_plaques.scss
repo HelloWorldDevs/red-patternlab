@@ -1,0 +1,12 @@
+.floaty-plaque{
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+}
+.floaty-plaque-content{
+  width: 60%;
+  height: 30%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
