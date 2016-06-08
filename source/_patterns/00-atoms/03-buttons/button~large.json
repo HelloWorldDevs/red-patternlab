@@ -1,12 +1,12 @@
 {
-"value" : "Lost Your Password?",
-
-"attributes": {
+  "value" : "Lost Your Password?",
+  "attributes": {
   "Attribute()": {
-    "href": "www.google.com",
     "class": [
-      "btn"
-      ]
-    }
+      "btn--lost",
+      "l-left"
+    ]
   }
+
+}
 }
