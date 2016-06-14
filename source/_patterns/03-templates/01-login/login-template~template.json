@@ -1,5 +1,4 @@
 {
-  "div_classes":"g g-2up",
-  "div_classes_second":"element-center gi",
-  "form-section-login" : "organisms-form-section-login"
+  "div_classes":"container-halfwidth element-center",
+  "form_section_login" : "organisms-form-section-login"
 }

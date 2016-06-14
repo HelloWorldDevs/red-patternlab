@@ -22,25 +22,21 @@ $red-dark : #830707;
     background: rgba(255, 255, 255, 0.2);
 }
 
-.container_header{
-  background-color: $blue-dark;
-}
-//
-// .login--border--extended {
-//   height: 17em;
-// }
-
-.element-center {
-  margin: 0 auto;
-  float: none;
+.container-halfwidth{
+  width: 50%;
 }
 
 .container--white {
   background-color: #fff;
 }
 
-.text-center {
-  text-align: center;
+.container--rounded {
+  border-radius: .5em;
+}
+
+.element-center {
+  margin: 0 auto;
+  float: none;
 }
 
 .element--left {
@@ -50,8 +46,29 @@ $red-dark : #830707;
 .element-right {
   float: right;
 }
-.fieldset--extended {
-  height: 9em;
+
+.header-topround{
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.header--backgroundblue{
+  background-color: $blue-dark;
+}
+
+.header--white{
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 //MODULES
@@ -69,12 +86,13 @@ $red-dark : #830707;
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
+padding: .5rem 2rem;
+margin: 1rem;
 font-size: .9em;
 font-weight: 100;
 cursor: pointer;
 display: block;
 border-radius: 0.33em;
-padding: .5rem 2rem;
 background-color: $white-egg;
 color: black;
 background: url(../images/br_down.png) no-repeat 95% 60%;
@@ -122,14 +140,22 @@ body{
   font-style: $primary-font;
 }
 
-.header--white{
-  color: #fff;
-}
-
 .demo-animate{
   background-color: green;
 }
 
 option{
   background-color: green;
+}
+
+
+@media (max-width: 900px){
+  .container-halfwidth{
+    width: 70%;
+  }
+}
+
+
+body {
+  background-color: $gray-dark;
 }
