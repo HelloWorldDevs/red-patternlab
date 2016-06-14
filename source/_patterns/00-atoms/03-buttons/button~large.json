@@ -1,12 +1,5 @@
 {
-  "value" : "Lost Your Password?",
-  "attributes": {
-  "Attribute()": {
-    "class": [
-      "btn--lost",
-      "l-left"
-    ]
-  }
-
-}
+  "value" : "Button Text",
+  "a_classes" : "btn--wide btn",
+  "p_classes": "container--border-padded"
 }

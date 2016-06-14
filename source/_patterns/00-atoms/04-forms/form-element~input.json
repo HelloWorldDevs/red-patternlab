@@ -1,0 +1,8 @@
+{
+  "value" : "input text",
+  "div_classes" : "fleild-container feild--flex",
+  "label_classes" : "label--flex",
+  "input_classes" : "input--flex input--rounded",
+  "input_type" : "text",
+  "placeholder" : "placeholder text"
+}

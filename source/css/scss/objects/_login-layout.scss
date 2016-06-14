@@ -1,7 +1,19 @@
+//color scheme
+$white-egg: #E9E9E9;
+$gray-light-4: #BFC7CC; //border
+$gray-dark: #333333;
+$gray-darker : #505050;
+$blue-light: #368BC0;
+$blue-lighter: #57ACD7;
+$blue-dark: #1669AA;
+$red-light : #B12525;
+$red-dark : #830707;
+
+
 
 //LAYOUT
 
-.l-login--border{
+.container--border-padded{
     margin: 2em 0;
     padding: .90em;
     border: 1px solid white;
@@ -10,28 +22,32 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-.login--border--extended {
-  height: 17em;
+.container_header{
+  background-color: $blue-dark;
 }
+//
+// .login--border--extended {
+//   height: 17em;
+// }
 
-.l-login-center {
+.element-center {
   margin: 0 auto;
   float: none;
 }
 
-.l-login {
+.container--white {
   background-color: #fff;
 }
 
-.l-center {
+.text-center {
   text-align: center;
 }
 
-.l-left {
+.element--left {
  float: left;
 }
 
-.l-right {
+.element-right {
   float: right;
 }
 .fieldset--extended {
@@ -44,20 +60,24 @@
     width: 100%;
 }
 
-.btn--med{
+.btn--small{
 	border-radius: 0.33em;
 	margin: 1em;
 }
 
-a.btn--lost {
+.form__select {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 font-size: .9em;
 font-weight: 100;
 cursor: pointer;
 display: block;
 border-radius: 0.33em;
-padding: 0.25em 20px 0.333em 0.5em;
+padding: .5rem 2rem;
+background-color: $white-egg;
 color: black;
-background: url(../../images/br_down.png) no-repeat right 60%;
+background: url(../images/br_down.png) no-repeat 95% 60%;
 }
 
 .input--rounded {
@@ -73,6 +93,7 @@ margin: 1em .5em;
 
 .label--flex {
   width: 20%;
+  text-align: center;
 }
 
 .input--flex {
@@ -86,15 +107,7 @@ margin: 1em .5em;
 $header-font : "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
 $primary-font : Verdana, Arial, Helvetica, sans-serif;
 
-//color scheme
-$gray-light-4 : #BFC7CC; //border
-$gray-dark-3 : #333333;
-$gray-dark-4 : #505050;
-$light-blue : #368BC0;
-$lighter-blue : #57ACD7;
-$dark-blue : #1669AA;
-$light-red : #B12525;
-$dark-red : #830707;
+
 
 h1,
 h2,
@@ -116,7 +129,7 @@ body{
 .demo-animate{
   background-color: green;
 }
-// 
-// body{
-//   background: #70828f;
-// }
+
+option{
+  background-color: green;
+}

@@ -1,0 +1,11 @@
+{
+  "div_classes":"container--border-padded",
+  "div_classessecond" : "block-header container_header",
+  "color_classes":"container--white",
+  "header_classes":"header--white text-center",
+  "form_field_login": "molecules-form-field-login-form",
+  "form_select" : "atoms-form-select-select",
+  "button_large" : "atoms-button-large",
+  "button_small": "atoms-button-small",
+  "button_classes" : "element-right"
+}
