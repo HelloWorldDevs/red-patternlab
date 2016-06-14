@@ -1,5 +1,3 @@
-
-node_modules
 .DS_Store
 .idea
 export/*
@@ -7,3 +5,4 @@ public/*
 vendor/*
 source/styleguide/*
 config/*.json
+node_modules
