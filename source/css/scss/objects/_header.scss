@@ -1,8 +1,26 @@
+// .header {
+// 	background: $white;
+// 	padding: 0;
+// 	border-bottom: 1px solid #dbdbdb;
+// 	@extend .lc;
+// }
+
 .header {
-	background: $white;
-	padding: 0;
-	border-bottom: 1px solid #dbdbdb;
-	@extend .lc;
+	background-color: $light-blue;
+	height: 69px;
+
+	.menu {
+		margin: 0 auto;
+		width: 960px;
+		padding-top: 20px;
+	}
+
+	.menu-item {
+		display: inline-block;
+		background-color: white;
+		padding: 1%;
+		border-radius: 5%;
+	}
 }
 
 .logo {

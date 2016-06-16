@@ -442,7 +442,7 @@ td {
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-.lc, .header, [role=main] {
+.lc, [role=main] {
   max-width: 72em;
   margin: 0 auto;
   padding: 0.5em;
@@ -822,16 +822,24 @@ option {
   }
 }
 
-body {
-  background-color: #333333;
-}
-
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/
 .header {
-  background: #fff;
-  padding: 0;
-  border-bottom: 1px solid #dbdbdb;
+  background-color: #368BC0;
+  height: 69px;
+}
+
+.header .menu {
+  margin: 0 auto;
+  width: 960px;
+  padding-top: 20px;
+}
+
+.header .menu-item {
+  display: inline-block;
+  background-color: white;
+  padding: 1%;
+  border-radius: 5%;
 }
 
 .logo {
