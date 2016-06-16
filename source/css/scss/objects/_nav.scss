@@ -2,11 +2,26 @@
     $NAVIGATION
 \*------------------------------------*/
 
+////////////////////////////////////////
+
+.sub-nav {
+	.menu-item{
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.btn {
+		background-color: white;
+		color: $gray-dark;
+		height: 20px;
+	}
+}
+
+////////////////////////////////////////
 .nav {
 	clear: both;
 	overflow: hidden;
 	max-height: 0;
-	
+
 	a {
 		display: block;
 		padding: $pad;
@@ -29,7 +44,7 @@
 		a {
 			border: 0;
 		}
-		
+
 	}
 }
 
