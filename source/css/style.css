@@ -848,6 +848,24 @@ option {
   height: 30px;
 }
 
+.status-bar .status-group {
+  padding-left: 50%;
+}
+
+.status-bar p {
+  display: inline-block;
+}
+
+.status-bar .span {
+  color: blue;
+}
+
+.status-bar .btn {
+  background-color: #B12525;
+  font-size: 0.5em;
+  border-radius: 5%;
+}
+
 .logo {
   float: left;
   max-width: 8rem;
