@@ -1,5 +1,17 @@
-
+{% if input_flex %}
+{% block input_flex%}
 <div class="{{div_classes}}">
     <label class="{{label_classes}}">{{value}}</label>
     <input class="{{input_classes}}" type="{{input_type}}" placeholder="{{placeholder}}">
 </div>
+{% endblock %}
+{% endif %}
+
+{% if input_submit %}
+{% block input_submit %}
+<div class="{{div_classes}}">
+    <label class="{{label_classes}}">{{label_text}}</label>
+    <input class="{{input_classes}}" type="{{input_type}}" placeholder="{{placeholder}}">
+</div>
+{% endblock %}
+{% endif %}

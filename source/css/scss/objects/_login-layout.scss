@@ -1,6 +1,7 @@
-//color scheme
+//BASE
 $white-egg: #E9E9E9;
-$gray-light-4: #BFC7CC; //border
+$gray-background: #70828f;
+$gray-light-4: #BFC7CC;
 $gray-dark: #333333;
 $gray-darker : #505050;
 $blue-light: #368BC0;
@@ -11,15 +12,18 @@ $red-dark : #830707;
 
 
 
+
+
 //LAYOUT
 
+
 .container--border-padded{
-    margin: 2em 0;
-    padding: .90em;
-    border: 1px solid white;
-    border-color: rgba(255, 255, 255, 0.75);
-    border-radius: 0.8em;
-    background: rgba(255, 255, 255, 0.2);
+  margin: 2em 0;
+  padding: .50em;
+  border: 1px solid white;
+  border-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .container-halfwidth{
@@ -47,19 +51,6 @@ $red-dark : #830707;
   float: right;
 }
 
-.header-topround{
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-}
-
-.header--backgroundblue{
-  background-color: $blue-dark;
-}
-
-.header--white{
-  color: #fff;
-}
-
 .text-center {
   text-align: center;
 }
@@ -72,6 +63,38 @@ $red-dark : #830707;
 }
 
 //MODULES
+
+.login-template{
+  .btn--small{
+    background: -webkit-gradient(linear,left top, left bottom,from(#6dc3e6),to(#0c5fa3));
+    height: 2rem;
+    line-height: 0;
+  }
+
+
+  .btn--small:hover{
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, rgb(43, 206, 243)), to(rgb(5, 127, 219)));
+  }
+
+  input {
+    height: 2rem;
+  }
+}
+
+.header-topround{
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.header--backgroundblue{
+  background: -webkit-gradient(linear,left top, left bottom,from(#6dc3e6),to(#0c5fa3));
+}
+
+.header--white{
+  color: #fff;
+}
+
+
 .btn--wide{
     border-radius: 0.33em;
     width: 100%;
@@ -86,17 +109,58 @@ $red-dark : #830707;
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
-padding: .5rem 2rem;
+border: .1rem solid gray;
+padding: .1rem 2rem .1rem .5rem;
 margin: 1rem;
 font-size: .9em;
 font-weight: 100;
 cursor: pointer;
 display: block;
 border-radius: 0.33em;
-background-color: $white-egg;
 color: black;
-background: url(../images/br_down.png) no-repeat 95% 60%;
+background: url(../images/chevron-expand.png) no-repeat 95% 60%;
+background-color: $white-egg;
+
+  &:hover{
+    border-color: rgb(30, 175, 220);
+    color: rgb(30, 175, 220);
+  }
+
 }
+
+
+.dropdown--submit-input {
+  background: #e6e6e6;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+
+    p {
+      align-self: flex-end;
+      margin: 0 1rem;
+
+
+        .btn--small{
+          height: 2rem;
+          line-height: 2em;
+          font-size: .5rem;
+        }
+
+
+      a {
+        margin: 0;
+        display: block;
+      }
+
+    }
+
+
+  input {
+    height: 2rem;
+  }
+}
+
 
 .input--rounded {
   border-radius: 0.417em;
@@ -125,8 +189,6 @@ margin: 1em .5em;
 $header-font : "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
 $primary-font : Verdana, Arial, Helvetica, sans-serif;
 
-
-
 h1,
 h2,
 h3,
@@ -144,10 +206,6 @@ body{
   background-color: green;
 }
 
-option{
-  background-color: green;
-}
-
 
 @media (max-width: 900px){
   .container-halfwidth{
@@ -155,7 +213,6 @@ option{
   }
 }
 
-
 body {
-  background-color: $gray-dark;
+  background-color: $gray-background;
 }

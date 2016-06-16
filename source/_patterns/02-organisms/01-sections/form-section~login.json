@@ -1,10 +1,12 @@
 {
-  "div_classes":"container--border-padded",
+  "div_classes": "container--border-padded",
   "div_classes_second": "container--white clearfix container--rounded",
   "header_classes":"header-topround header--white text-center header--backgroundblue",
   "form_field_login": "molecules-form-field-login-form",
   "form_select" : "atoms-form-select-select",
   "button_large" : "atoms-button-large",
   "button_small": "atoms-button-small",
-  "button_classes" : "element-right"
+  "button_classes" : "element-right",
+  "button_large_text" : "Sign Up Here!",
+  "button_small_text" : "Login"
 }

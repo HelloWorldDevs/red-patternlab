@@ -1,4 +1,4 @@
 {
-  "div_classes":"container-halfwidth element-center",
+  "div_classes":"login-template container-halfwidth element-center",
   "form_section_login" : "organisms-form-section-login"
 }

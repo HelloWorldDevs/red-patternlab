@@ -1,0 +1,6 @@
+{
+  "submit_dropdown" : true,
+  "input" : "atoms-form-element-input-submit",
+  "div_classes" : "dropdown--submit-input clearfix",
+  "button_small" : "atoms-button-small"
+}
