@@ -801,6 +801,7 @@ td {
   display: flex;
   justify-content: center;
   border: 1px solid gray;
+  clear: both;
 }
 
 .dropdown--submit-input p {

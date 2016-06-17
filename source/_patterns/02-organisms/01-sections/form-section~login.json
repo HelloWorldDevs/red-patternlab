@@ -7,6 +7,7 @@
   "button_large" : "atoms-button-large",
   "button_small": "atoms-button-small",
   "button_classes" : "element-right",
+  "drop_down_submit_input" : "molecules-drop-down-submit-input",
   "button_large_text" : "Sign Up Here!",
   "button_small_text" : "Login"
 }
