@@ -57,7 +57,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
 	Usage: @include font-size(1, large);
 */
 /*------------------------------------*    $RESET
@@ -693,7 +693,7 @@ td {
 
 .container--border-padded {
   margin: 2em 0;
-  padding: .90em;
+  padding: .50em;
   border: 1px solid white;
   border-color: rgba(255, 255, 255, 0.75);
   border-radius: 0.8em;
@@ -725,19 +725,6 @@ td {
   float: right;
 }
 
-.header-topround {
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-}
-
-.header--backgroundblue {
-  background-color: #1669AA;
-}
-
-.header--white {
-  color: #fff;
-}
-
 .text-center {
   text-align: center;
 }
@@ -747,6 +734,33 @@ td {
   display: block;
   height: 0;
   clear: both;
+}
+
+.login-template .btn--small {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6dc3e6), to(#0c5fa3));
+  height: 2rem;
+  line-height: 0;
+}
+
+.login-template .btn--small:hover {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, #2bcef3), to(#057fdb));
+}
+
+.login-template input {
+  height: 2rem;
+}
+
+.header-topround {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.header--backgroundblue {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6dc3e6), to(#0c5fa3));
+}
+
+.header--white {
+  color: #fff;
 }
 
 .btn--wide {
@@ -763,16 +777,51 @@ td {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: .5rem 2rem;
+  border: .1rem solid gray;
+  padding: .1rem 2rem .1rem .5rem;
   margin: 1rem;
   font-size: .9em;
   font-weight: 100;
   cursor: pointer;
   display: block;
   border-radius: 0.33em;
-  background-color: #E9E9E9;
   color: black;
-  background: url(../images/br_down.png) no-repeat 95% 60%;
+  background: url(../images/chevron-expand.png) no-repeat 95% 60%;
+  background-color: #E9E9E9;
+}
+
+.form__select:hover {
+  border-color: #1eafdc;
+  color: #1eafdc;
+}
+
+.dropdown--submit-input {
+  background: #e6e6e6;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  clear: both;
+}
+
+.dropdown--submit-input p {
+  align-self: flex-end;
+  margin: 0 1rem;
+}
+
+.dropdown--submit-input p .btn--small {
+  height: 2rem;
+  line-height: 2em;
+  font-size: .5rem;
+}
+
+.dropdown--submit-input p a {
+  margin: 0;
+  display: block;
+}
+
+.dropdown--submit-input input {
+  height: 2rem;
 }
 
 .input--rounded {
@@ -812,15 +861,12 @@ body {
   background-color: green;
 }
 
-option {
-  background-color: green;
-}
-
 @media (max-width: 900px) {
   .container-halfwidth {
     width: 70%;
   }
 }
+
 
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/

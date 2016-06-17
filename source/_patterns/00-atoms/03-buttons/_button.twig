@@ -1,1 +1,11 @@
-<p class="{{p_classes}}"><a href="{{url}}" class="{{a_classes}}">{{ value }}</a></p>
+{% if button_small %}
+  {% block button_small %}
+  <p class="{{p_classes}}"><a href="{{url}}" class="{{a_classes}}">{{ button_small_text }}</a></p>
+  {% endblock %}
+{% endif %}
+
+{% if button_large %}
+  {% block button_large %}
+  <p class="{{p_classes}}"><a href="{{url}}" class="{{a_classes}}">{{ button_large_text }}</a></p>
+  {% endblock %}
+{% endif %}

@@ -1,0 +1,9 @@
+{
+  "input_submit" : true,
+  "label_text" : "Label Text",
+  "div_classes" : "fleild-container input--flex",
+  "label_classes" : "",
+  "input_classes" : "input--rounded element--left",
+  "input_type" : "text",
+  "placeholder" : "placeholder text"
+}
