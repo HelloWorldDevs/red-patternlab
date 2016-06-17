@@ -1,5 +1,9 @@
-<div class="{{ classes }}">
-  {{ img }}
-  {%  include button %}
-  {{ list }}
+<div class="{{classes}}">
+  <div class="{{ img_class }}">
+    {{ img }}
+  </div>
+  <div class="{{ btn_class }}">
+    {%  include button %}
+    {{ list }}
+  </div>
 </div>

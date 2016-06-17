@@ -120,3 +120,13 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "objects/comments";
 @import "objects/messaging";
 @import "objects/plaques";
+@import "objects/links";
+
+
+.dashboard {
+  background-color: #d3d3d3;
+  .links {
+    width: 320px;
+    margin-left: 100px;
+  }
+}

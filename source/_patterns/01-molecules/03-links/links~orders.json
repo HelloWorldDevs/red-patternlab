@@ -2,5 +2,7 @@
   "img": "img",
   "button": "atoms-button-orders",
   "list": "Orders > List",
-  "classes": "orders-group dashboard-links"
+  "classes": "orders-group dashboard-links",
+  "img_class": "img-class",
+  "btn_class": "btn-class"
 }

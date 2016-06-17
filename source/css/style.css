@@ -1648,3 +1648,32 @@ option {
   right: 0;
   bottom: 0;
 }
+
+.dashboard-links {
+  width: 300px;
+}
+
+.dashboard-links .img-class {
+  position: relative;
+  left: 45px;
+  top: 35px;
+}
+
+.dashboard-links .btn-class {
+  position: relative;
+  left: 120px;
+}
+
+.dashboard-links.orders-group {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed black;
+}
+
+.dashboard {
+  background-color: #d3d3d3;
+}
+
+.dashboard .links {
+  width: 320px;
+  margin-left: 100px;
+}
