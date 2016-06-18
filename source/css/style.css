@@ -895,8 +895,17 @@ body {
   display: flex;
 }
 
-.header--main_nav .row--nav-icons img {
+.header--main_nav .row--nav-icons .icon--image {
   margin: 0 .5rem;
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+.header--main_nav .row--nav-icons .icon--image:hover {
+  opacity: 1;
 }
 
 .header--main_nav .row--nav-icons .selected {
@@ -913,19 +922,47 @@ body {
 }
 
 .header--secondary_nav {
-  height: 3.5rem;
-  align-items: baseline;
+  height: 2.667em;
+  line-height: 2.667em;
+  padding: 0 .5rem;
   display: flex;
+  align-items: center;
   color: white;
   border-top: 1px solid #ff6500;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#303135), color-stop(0.06, #3c3d42), color-stop(0.18, #404447), color-stop(0.5, #34383b), color-stop(0.5, #25292c), color-stop(0.63, #1a1b1f), to(black));
 }
 
+.header--secondary_nav .button-container--row p {
+  margin: 0;
+}
+
+.header--secondary_nav .row--input_submit {
+  align-items: baseline;
+}
+
+.header-template .row--input_submit {
+  padding: 0 .5rem;
+}
+
+.header-template .row--input_submit .btn {
+  font-size: .8rem;
+  padding: .5rem;
+  height: 1.8rem;
+  line-height: .6rem;
+}
+
 .header-template .row--input_submit input {
-  width: 20%;
+  width: 10rem;
+  font-size: .8rem;
+  padding: .5rem;
+  height: 1.8rem;
 }
 
 .header-template .button-container--row .btn {
+  font-size: .8rem;
+  padding: .5rem;
+  height: 1.8rem;
+  line-height: .6rem;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#858d95), color-stop(0.5, #46505b), color-stop(0.5, #38424d), to(#1c2733));
 }
 
@@ -940,12 +977,30 @@ body {
 }
 
 .header-template .row--input_submit .btn {
-  height: 2rem;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#014a7d), to(#3399cc));
+}
+
+@media all and (max-width: 670px) {
+  .header--secondary_nav {
+    height: auto;
+    display: block;
+  }
+  .header--secondary_nav .row--input_submit {
+    padding: 0rem;
+  }
+  .header--signature {
+    font-size: 12px;
+    position: absolute;
+    right: .5rem;
+  }
 }
 
 /*------------------------------------*    $RED
 \*------------------------------------*/
+.icon--image {
+  line-height: 0;
+}
+
 .row--input_submit {
   width: 100%;
   padding: .5rem;
@@ -1294,6 +1349,7 @@ body {
 }
 
 .drop-down--arrow {
+  align-self: center;
   width: 20px;
   height: 20px;
   float: right;

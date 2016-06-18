@@ -2,6 +2,14 @@
     $MIXINS
 \*------------------------------------*/
 
+@mixin opacity-hover{
+  opacity: .5;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
 @mixin top-round($radius){
   border-top-left-radius: $radius;
   border-top-right-radius: $radius;
