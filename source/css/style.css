@@ -57,7 +57,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
 */
 /*------------------------------------*    $RESET
@@ -867,6 +867,9 @@ body {
   }
 }
 
+body {
+  background-color: #70828f;
+}
 
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/
@@ -1716,7 +1719,7 @@ body {
 }
 
 .dashboard {
-  background-color: #d3d3d3;
+  background-color: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#303135), color-stop(0.06, #3c3d42), color-stop(0.18, #404447), color-stop(0.5, #34383b), color-stop(0.5, #25292c), color-stop(0.63, #1a1b1f), to(black));
 }
 
 .dashboard .links {
