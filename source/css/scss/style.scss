@@ -121,15 +121,3 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "objects/messaging";
 @import "objects/plaques";
 @import "objects/links";
-
-
-
-
-.dashboard {
-  background-color: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#303135)), color-stop(0.06, #3c3d42), color-stop(0.18, #404447), color-stop(0.5, #34383b), color-stop(0.5, #25292c), color-stop(0.63, #1a1b1f), to(black));
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(48, 49, 53)), color-stop(0.06, rgb(60, 61, 66)), color-stop(0.18, rgb(64, 68, 71)), color-stop(0.5, rgb(52, 56, 59)), color-stop(0.5, rgb(37, 41, 44)), color-stop(0.63, rgb(26, 27, 31)), to(black));
-  .links {
-    width: 320px;
-    margin-left: 100px;
-  }
-}

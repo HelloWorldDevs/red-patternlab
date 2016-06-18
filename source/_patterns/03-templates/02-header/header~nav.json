@@ -1,5 +1,6 @@
 {
   "div_classes" : "header-template",
   "main_nav" : "organisms-nav-main-nav",
-  "secondary_nav" : "organisms-nav-secondary-nav"
+  "secondary_nav" : "organisms-nav-secondary-nav",
+  "status_bar": "organisms-nav-status-bar"
 }
