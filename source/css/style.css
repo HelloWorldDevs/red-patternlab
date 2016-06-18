@@ -973,7 +973,7 @@ body {
 }
 
 .header-template .row--input_submit {
-  padding: 1rem 3rem 0;
+  align-self: baseline;
 }
 
 .header-template .row--input_submit .btn {
@@ -1341,7 +1341,7 @@ body {
 /*------------------------------------*    $RED
 \*------------------------------------*/
 .btn--drop-down {
-  display: flex;
+  display: inline-flex;
   margin: 1em;
   text-align: center;
   padding: .3rem .5rem .3rem 1rem;
