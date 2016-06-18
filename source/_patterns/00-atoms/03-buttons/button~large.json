@@ -1,6 +1,6 @@
 {
   "button_large" : true,
   "button_large_text" : "Button Large",
-  "a_classes" : "btn--wide btn",
-  "p_classes": "container--border-padded"
+  "button_classes" : "btn--wide btn",
+  "border_classes": "container--border-padded"
 }

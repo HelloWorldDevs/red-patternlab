@@ -15,3 +15,10 @@
 </div>
 {% endblock %}
 {% endif %}
+
+
+{% if input_label_none %}
+{% block input_label_none %}
+    <input class="{{input_classes}}" type="text" placeholder="{{text}}">
+{% endblock %}
+{% endif %}

@@ -1,0 +1,6 @@
+{
+  "secondary_nav" : true,
+  "div_class" : "header--secondary_nav",
+  "row_buttons" : "molecules-row-buttons",
+  "row_input_submit" : "molecules-row-input-submit"
+}

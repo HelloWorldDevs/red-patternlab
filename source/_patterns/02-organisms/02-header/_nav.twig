@@ -1,0 +1,18 @@
+{% if main_nav %}
+  {% block main_nav %}
+  <div class="{{div_class}}">
+      {% include row_nav_icon %}
+      {% include block_text_signature %}
+  {% endblock %}
+  </div>
+{% endif %}
+
+
+ {% if secondary_nav %}
+  {% block secondary_nav %}
+  <div class="{{div_class}}">
+      {% include row_buttons %}
+      {% include row_input_submit %}
+  {% endblock %}
+  </div>
+{% endif %}

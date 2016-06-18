@@ -1,6 +1,13 @@
+
+
+
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
+
+
+
+
 .btn {
 	display: inline-block;
 	background: $gray-dark;
@@ -38,3 +45,43 @@
 .text-btn {
 	font-style: italic;
 }
+
+
+
+
+
+/*------------------------------------*\
+    $RED
+\*------------------------------------*/
+
+	.btn--drop-down {
+		display: flex;
+		margin: 1em;
+		text-align: center;
+		padding: .3rem .5rem .3rem 1rem;
+		border-radius: 0.33em;
+	}
+
+	.drop-down--arrow{
+		width: 20px;
+		height: 20px;
+		float: right;
+		border-left: 1px solid #fff;
+		margin-left: 1rem;
+		background: url(../images/menu-open-arrow.png) no-repeat 98% 50%;
+	}
+
+	.button-container--row{
+		display: flex;
+
+		.btn {
+			// display: inline;
+			margin: .5rem .3rem;
+			padding: .3rem 1.5rem;
+			height: 2rem;
+		}
+
+		.btn--drop-down{
+			padding-right: .5rem;
+		}
+	}

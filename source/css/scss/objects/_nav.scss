@@ -1,4 +1,38 @@
 /*------------------------------------*\
+    $RED
+\*------------------------------------*/
+
+
+.row--input_submit{
+	width: 100%;
+	padding: .5rem;
+	display: flex;
+	justify-content: flex-end;
+
+	input{
+		height: 2rem;
+		margin: 0 1rem;
+		width: 80%;
+		text-align: right;
+	}
+
+	.btn{
+		height: 2rem;
+		line-height: 0;
+		margin: 0 1rem;
+	}
+}
+
+@media(max-width: 900px){
+	
+}
+
+
+
+
+
+
+/*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
 
@@ -6,7 +40,7 @@
 	clear: both;
 	overflow: hidden;
 	max-height: 0;
-	
+
 	a {
 		display: block;
 		padding: $pad;
@@ -29,7 +63,7 @@
 		a {
 			border: 0;
 		}
-		
+
 	}
 }
 

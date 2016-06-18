@@ -81,10 +81,7 @@ $red-dark : #830707;
   }
 }
 
-.header-topround{
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-}
+.header-topround{@include top-round(inherit); }
 
 .header--backgroundblue{
   background: -webkit-gradient(linear,left top, left bottom,from(#6dc3e6),to(#0c5fa3));

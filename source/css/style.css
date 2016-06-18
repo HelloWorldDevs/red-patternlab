@@ -57,7 +57,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
 	Usage: @include font-size(1, large);
 */
 /*------------------------------------*    $RESET
@@ -439,10 +439,16 @@ td {
 
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
+/*------------------------------------*    $RED
+\*------------------------------------*/
+.row__container {
+  display: flex;
+}
+
 /*------------------------------------*    $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-.lc, .header, [role=main] {
+.lc, [role=main] {
   max-width: 72em;
   margin: 0 auto;
   padding: 0.5em;
@@ -873,57 +879,91 @@ body {
 
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/
-.header {
-  background: #fff;
-  padding: 0;
-  border-bottom: 1px solid #dbdbdb;
+.header--main_nav {
+  display: flex;
+  padding: 0 5rem 0 3rem;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#014a7d), to(#3399cc));
+  height: 6rem;
 }
 
-.logo {
-  float: left;
-  max-width: 8rem;
-  margin: 0.4rem;
+.header--main_nav .row--nav-icons {
+  display: inline-block;
+  align-self: flex-end;
 }
 
-@media all and (min-width: 46.8em) {
-  .logo {
-    max-width: 9rem;
-  }
+.header--main_nav .row--nav-icons ul {
+  display: flex;
 }
 
-.nav-toggle {
-  float: right;
-  display: block;
-  padding: 0.9rem 1rem 0.7rem;
-  font-size: 1.3rem;
-  line-height: 1;
-  border-left: 1px solid #dbdbdb;
+.header--main_nav .row--nav-icons img {
+  margin: 0 .5rem;
 }
 
-@media all and (min-width: 46.8em) {
-  .nav-toggle {
-    display: none;
-  }
+.header--main_nav .row--nav-icons .selected {
+  height: 100%;
+  padding: .5rem 0 0 0;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#858d95), color-stop(0.5, #46505b), color-stop(0.5, #38424d), to(#1c2733)) !important;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
 }
 
-@media all and (max-width: 17em) {
-  .nav-toggle {
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-  }
+.header--main_nav .header--signature {
+  color: rgba(255, 255, 255, 0.75);
+  margin-left: auto;
 }
 
-.search-form {
-  overflow: hidden;
-  max-height: 0;
+.header--secondary_nav {
+  height: 3.5rem;
+  align-items: baseline;
+  display: flex;
+  color: white;
+  border-top: 1px solid #ff6500;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#303135), color-stop(0.06, #3c3d42), color-stop(0.18, #404447), color-stop(0.5, #34383b), color-stop(0.5, #25292c), color-stop(0.63, #1a1b1f), to(black));
 }
 
-@media all and (min-width: 46.8em) {
-  .search-form {
-    float: right;
-    max-height: none;
-    margin: 0.65em 0.5em 0 0;
-  }
+.header-template .row--input_submit input {
+  width: 20%;
+}
+
+.header-template .button-container--row .btn {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#858d95), color-stop(0.5, #46505b), color-stop(0.5, #38424d), to(#1c2733));
+}
+
+.header-template .button-container--row .btn:hover {
+  box-shadow: #cbe9f7 0px 0px 7px;
+  transition: all 100ms;
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afc2cf), color-stop(0.5, #537288), color-stop(0.5, #45667c), to(#2c526b));
+}
+
+.header-template .row--input_submit {
+  padding: 1rem 3rem 0;
+}
+
+.header-template .row--input_submit .btn {
+  height: 2rem;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#014a7d), to(#3399cc));
+}
+
+/*------------------------------------*    $RED
+\*------------------------------------*/
+.row--input_submit {
+  width: 100%;
+  padding: .5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row--input_submit input {
+  height: 2rem;
+  margin: 0 1rem;
+  width: 80%;
+  text-align: right;
+}
+
+.row--input_submit .btn {
+  height: 2rem;
+  line-height: 0;
+  margin: 0 1rem;
 }
 
 /*------------------------------------*    $NAVIGATION
@@ -1241,6 +1281,39 @@ body {
 
 .text-btn {
   font-style: italic;
+}
+
+/*------------------------------------*    $RED
+\*------------------------------------*/
+.btn--drop-down {
+  display: flex;
+  margin: 1em;
+  text-align: center;
+  padding: .3rem .5rem .3rem 1rem;
+  border-radius: 0.33em;
+}
+
+.drop-down--arrow {
+  width: 20px;
+  height: 20px;
+  float: right;
+  border-left: 1px solid #fff;
+  margin-left: 1rem;
+  background: url(../images/menu-open-arrow.png) no-repeat 98% 50%;
+}
+
+.button-container--row {
+  display: flex;
+}
+
+.button-container--row .btn {
+  margin: .5rem .3rem;
+  padding: .3rem 1.5rem;
+  height: 2rem;
+}
+
+.button-container--row .btn--drop-down {
+  padding-right: .5rem;
 }
 
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */
