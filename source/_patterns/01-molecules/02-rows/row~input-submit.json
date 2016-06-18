@@ -1,0 +1,7 @@
+{
+  "row_input_submit" : true,
+  "div_classes" : "row--input_submit",
+  "input_label_none" : "atoms-form-element-input-label-none",
+  "button_small" : "atoms-button-small"
+
+}

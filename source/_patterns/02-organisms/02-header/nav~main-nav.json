@@ -1,0 +1,6 @@
+{
+  "main_nav" : true,
+  "div_class" : "header--main_nav",
+  "row_nav_icon" : "molecules-row-nav-icon",
+  "block_text_signature" : "molecules-text-signature"
+}

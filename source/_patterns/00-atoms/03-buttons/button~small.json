@@ -1,5 +1,5 @@
 {
   "button_small" : true,
-  "button_small_text" : "Button Small",
-  "a_classes" : "btn--small btn"
+  "button_small_text" : "Button",
+  "button_classes" : "btn--small btn"
 }

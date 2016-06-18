@@ -1,0 +1,9 @@
+{
+  "nav_icon"  : true, 
+  "div_class" : "row--nav-icons",
+  "img_src_1" : "../../images/home.png",
+  "img_src_2" : "../../images/office.png",
+  "img_src_3" : "../../images/settings.png",
+  "img_src_4" : "../../images/write.png",
+  "img_src_5" : "../../images/users.png"
+}

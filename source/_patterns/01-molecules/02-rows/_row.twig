@@ -1,0 +1,43 @@
+{% if nav_icon %}
+  {% block nav_icon %}
+    <div class="{{div_class}}">
+      <ul>
+        <li class="selected">
+        <a href={{url}}><img src="{{img_src_1}}"></a>
+      </li>
+      <li>
+        <a href={{url}}><img src="{{img_src_2}}"></a>
+      </li>
+      <li>
+        <a href={{url}}><img src="{{img_src_3}}"></a>
+      </li>
+      <li>
+        <a href={{url}}><img src="{{img_src_4}}"></a>
+      </li>
+      <li>
+        <a href={{url}}><img src="{{img_src_5}}"></a>
+      </li>
+      </ul>
+    </div>
+  {% endblock %}
+{% endif %}
+
+{% if row_buttons %}
+  {% block row_buttons %}
+    <div class="{{div_classes}}">
+      {% include button_small %}
+      {% include button_small %}
+      {% include button_drop_down %}
+    </div>
+  {% endblock %}
+{% endif %}
+
+
+{% if row_input_submit %}
+  {% block row_input %}
+    <div class="{{div_classes}}">
+      {% include input_label_none %}
+      {% include button_small %}
+    </div>
+  {% endblock %}
+{% endif %}

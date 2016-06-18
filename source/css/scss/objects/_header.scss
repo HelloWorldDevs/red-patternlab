@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // .header {
 // 	background: $white;
 // 	padding: 0;
@@ -56,37 +57,105 @@
 	float: left;
 	max-width: 8rem;
 	margin: 0.4rem;
+=======
 
-	@media all and (min-width: $bp-med) {
-		max-width: 9rem;
+.header--main_nav{
+	display: flex;
+	padding: 0 5rem 0 3rem;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#014a7d), to(#3399cc));
+	height: 6rem;
+
+	.row--nav-icons{
+		display: inline-block;
+		align-self: flex-end;
+
+		ul{
+			display: flex;
+		}
+
+		img{
+			margin: 0 .5rem;
+		}
+>>>>>>> 2ed32dbb3bad5061b9e0697ad8c49fb01e7d36be
+
+		.selected {
+			height: 100%;
+			padding: .5rem 0 0 0;
+	    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(133, 141, 149)), color-stop(0.5, rgb(70, 80, 91)), color-stop(0.5, rgb(56, 66, 77)), to(rgb(28, 39, 51))) !important;
+			@include top-round(.3rem);
+		}
+
+	}
+
+	.header--signature{
+		color: rgba(255, 255, 255, 0.75);
+		margin-left: auto;
+	}
+
+
+}
+
+
+.header--secondary_nav {
+	height: 3.5rem;
+	align-items: baseline;
+	display: flex;
+	color: white;
+	border-top: 1px solid rgb(255, 101, 0);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(48, 49, 53)), color-stop(0.06, rgb(60, 61, 66)), color-stop(0.18, rgb(64, 68, 71)), color-stop(0.5, rgb(52, 56, 59)), color-stop(0.5, rgb(37, 41, 44)), color-stop(0.63, rgb(26, 27, 31)), to(black));
+
+
+	.button-container--row{
+
+	}
+
+	.row--input_submit{
+
+	}
+
+}
+
+
+
+.header-template{
+
+	.row--input_submit{
+		input{
+			width: 20%;
+		}
+	}
+
+	.row--nav-icons{
+
+	}
+
+	.button-container--row{
+		.btn{
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(133, 141, 149)), color-stop(0.5, rgb(70, 80, 91)), color-stop(0.5, rgb(56, 66, 77)), to(rgb(28, 39, 51)));
+		}
+		.btn:hover{
+			box-shadow: rgb(203, 233, 247) 0px 0px 7px;
+		    transition: all 100ms;
+		    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(175, 194, 207)), color-stop(0.5, rgb(83, 114, 136)), color-stop(0.5, rgb(69, 102, 124)), to(rgb(44, 82, 107)))
+		}
+	}
+
+.row--input_submit{
+	padding: 1rem 3rem 0;
+
+	.btn{
+		height: 2rem;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#014a7d), to(#3399cc));
 	}
 }
 
-.nav-toggle {
-	float: right;
-	display: block;
-	padding: 0.9rem 1rem 0.7rem;
-	font-size: 1.3rem;
-	line-height: 1;
-	border-left: 1px solid #dbdbdb;
+.button-container--row{
 
-	@media all and (min-width: $bp-med) {
-		display: none;
-	}
-
-	@media all and (max-width: 17em) {
-		padding-left: 0.2rem;
-		padding-right: 0.2rem;
-	}
 }
 
-.search-form {
-	overflow: hidden;
-	max-height: 0;
+}
 
-	@media all and (min-width: $bp-med) {
-		float: right;
-		max-height: none;
-		margin: 0.65em 0.5em 0 0;
-	}
+
+@media (max-width: 600 ){
+
 }
