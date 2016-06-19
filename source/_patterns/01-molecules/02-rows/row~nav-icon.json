@@ -1,5 +1,6 @@
 {
-  "nav_icon"  : true, 
+  "nav_icon"  : true,
+  "incon_classes" : "icon--image",
   "div_class" : "row--nav-icons",
   "img_src_1" : "../../images/home.png",
   "img_src_2" : "../../images/office.png",
