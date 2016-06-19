@@ -1553,6 +1553,10 @@ body {
   padding: 0.5em;
 }
 
+.block .user-list .title {
+  width: 10%;
+}
+
 .inline-list li {
   display: inline-block;
 }
