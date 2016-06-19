@@ -1097,6 +1097,20 @@ body {
   }
 }
 
+.dashboard .btn-class {
+  bottom: 20px;
+}
+
+.dashboard .link-class {
+  color: white;
+}
+
+.dashboard .links {
+  width: 350px;
+  padding-left: 7rem;
+  padding-top: 2rem;
+}
+
 /*------------------------------------*    $TEXT Styles
 \*------------------------------------*/
 .intro {

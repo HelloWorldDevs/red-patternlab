@@ -1,9 +1,9 @@
 <div class="{{classes}}">
   <div class="{{ img_class }}">
-    {{ img }}
+    <img src="{{ img }}">
   </div>
   <div class="{{ btn_class }}">
-    {%  include button %}
-    {{ list }}
+    <a href="#" class="{{link_class}}">{%  include button %}</a>
+    <p class="{{p_class}}">{{ list }}</p>
   </div>
 </div>
