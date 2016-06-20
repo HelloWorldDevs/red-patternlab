@@ -1,6 +1,33 @@
+html{
+	background: rgba(112,130,143,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(112,130,143,1) 0%, rgba(192,213,219,1) 0%, rgba(112,130,143,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(112,130,143,1)), color-stop(0%, rgba(192,213,219,1)), color-stop(100%, rgba(112,130,143,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(112,130,143,1) 0%, rgba(192,213,219,1) 0%, rgba(112,130,143,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(112,130,143,1) 0%, rgba(192,213,219,1) 0%, rgba(112,130,143,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(112,130,143,1) 0%, rgba(192,213,219,1) 0%, rgba(112,130,143,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(112,130,143,1) 0%, rgba(192,213,219,1) 0%, rgba(112,130,143,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70828f', endColorstr='#70828f', GradientType=1 );
+}
+
+
 body {
-	background: $white;
-	font: 100%/1.5 $font;
+	font-family: $primary-font;
 	-webkit-text-size-adjust: 100%;
-	color: $gray-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-style: $header-font;
+}
+.container{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.container-row{
+	width: 100%;
 }

@@ -1,4 +1,5 @@
 {
+  "form_feild_flex_input" : true, 
   "form_classes" : "inline-form newsletter-form",
   "feild_classes" : "none",
   "children" : "atoms-form-element-input-flex"

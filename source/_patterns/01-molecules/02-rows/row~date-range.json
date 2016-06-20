@@ -1,0 +1,5 @@
+{
+  "row_date_range" : true,
+  "div_classes" : "select-row",
+  "select" : "atoms-form-select-date"
+}

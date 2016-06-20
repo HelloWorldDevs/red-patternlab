@@ -1,0 +1,5 @@
+{
+  "row_filter_simple" : true,
+  "div_classes" : "row--filter clearfix",
+  "button_small" : "atoms-button-small"
+}

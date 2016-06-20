@@ -46,7 +46,49 @@
 {% if row_filter %}
   {% block row_filter %}
     <div class="{{div_classes}}">
+      {% include form_data_pagination %}
       {% include form_data_select %}
+    </div>
+  {% endblock %}
+{% endif %}
+
+{% if row_filter_simple %}
+  {% block row_filter_simple %}
+    <div class="{{div_classes}}">
+      {% include button_small %}
+    </div>
+  {% endblock %}
+{% endif %}
+
+{% if row_select_two %}
+  {% block row_select %}
+      <div class="{{div_classes}}">
+        {% include select %}
+        {% include select %}
+      </div>
+  {% endblock %}
+{% endif %}
+
+
+{% if row_select_four %}
+  {% block row_select_four %}
+    <div class="{{container_row}}">
+      <div class="{{div_classes}}">
+        {% include select %}
+        {% include select %}
+        {% include select %}
+        {% include select %}
+      </div>
+    </div>
+  {% endblock %}
+{% endif %}
+
+
+{% if row_date_range %}
+  {% block row_date_range %}
+      <div class="{{div_classes}}">
+        {% include select %}
+        {% include select %}
     </div>
   {% endblock %}
 {% endif %}

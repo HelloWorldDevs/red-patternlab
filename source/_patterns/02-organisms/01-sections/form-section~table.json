@@ -4,5 +4,6 @@
   "button_drop_down" : "atoms-button-drop-down",
   "div_classes" : "nav--top-search",
   "table" : "organisms-table-body",
-  "row_input_submit" : "molecules-row-input-submit"
+  "row_input_submit" : "molecules-row-input-submit",
+  "row_filter" : "molecules-row-filter"
 }

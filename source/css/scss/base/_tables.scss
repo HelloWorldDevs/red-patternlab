@@ -6,12 +6,17 @@
 			display: table;
 			border-collapse:collapse;
 			width: 100%;
+
+			tr:hover td{
+							background: #d1e5ef;
+			}
 		}
 
 		tr{
 			border: none;
 			white-space: nowrap;
 			overflow: hidden;
+
 		}
 
 	th{
@@ -45,9 +50,7 @@
 		padding: 0.1em 2em .1em .5rem;
 		border-left: 1px dotted #333333;
 		line-height: 1.25em;
-		&:hover{
-			    background: #d1e5ef;
-		}
+
 	}
 
 	.td--actions{

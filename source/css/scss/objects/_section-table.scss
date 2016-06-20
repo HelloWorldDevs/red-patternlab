@@ -2,8 +2,11 @@
 .section--table{
 
   .btn--drop-down{
-    position: absolute;
-    top: 1.25rem;
+    position: relative;
+    top: .5rem;
+    left: 1.5rem;
+    right: 0rem;
+    margin: 0;
   }
 
   .row--input_submit {
@@ -13,17 +16,59 @@
     }
   }
 
-  .select--data-select{
+  .btn{
+    border-color: rgb(80, 163, 200) rgb(41, 124, 180) rgb(8, 63, 111);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, rgb(114, 198, 228)), to(rgb(12, 95, 165)));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
+    &:hover{
+      color: white;
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.05, rgb(43, 206, 243)), to(rgb(5, 127, 219)));
+    }
   }
 
+  .btn--drop-down{
+    width: 10rem;
+  }
 }
 
-.select--pagination{
-  min-width: auto;
-  width: 16px;
-  overflow: hidden;
-  text-indent: 100px;
-  background-repeat: no-repeat;
-  /* background-position: center; */
+.select--data-select{
+  width: 12rem;
+}
+
+.paginat-select{
+   display: flex;
+   width: 8rem;
+   background-position: center;
+   border-radius: 0.5em;
+   background: -webkit-gradient(linear,left top, left bottom, from(#f8f8f8), to(#e7e7e7));
+   border: 1px solid white;
+   padding: 0.2em 0.2em;
+
+ .paginat-select__anchor{
+    width: 16rem;
+    font-size: 10px;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   &:hover{
+     cursor: pointer;
+     color: transparent;
+     background-color: #e0e0e0;
+     background-color: rgba(0, 0, 0, 0.1);
+   }
+ }
+}
+
+.row--filter{
+padding: 0.5em 0.75em;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(139, 139, 139)), color-stop(0.1, rgb(169, 169, 169)), color-stop(0.3, rgb(189, 189, 189)), to(rgb(191, 191, 191)));
+  .paginat-select{
+    float: right;
+  }
+
+  .select--data-select{
+    color: #808080;
+  }
 }

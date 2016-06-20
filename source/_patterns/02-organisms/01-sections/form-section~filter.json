@@ -1,0 +1,11 @@
+{
+  "form_section_filter" : true,
+  "border_classes" : "container--border-padded section-filter",
+  "button_drop_down" : "atoms-button-drop-down",
+  "div_classes" : "container--white clearfix",
+  "container_row" : "container-row",
+  "row_select_two" : "molecules-row-select-two",
+  "row_date_range" : "molecules-row-date-range",
+  "row_select_four" : "molecules-row-select-four",
+  "row_filter_simple" : "molecules-row-filter-simple"
+}

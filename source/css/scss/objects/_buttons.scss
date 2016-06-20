@@ -18,10 +18,10 @@
 	border: 0;
 	text-align: center;
 
-	&:hover, &:focus {
-		background: $gray;
-		color: $white;
-	}
+	// &:hover, &:focus {
+	// 	background: $gray;
+	// 	color: $white;
+	// }
 
 	&.disabled {
 		background: $gray-light-2;
@@ -50,6 +50,8 @@
 
 
 
+
+
 /*------------------------------------*\
     $RED
 \*------------------------------------*/
@@ -58,19 +60,23 @@
 		display: inline-flex;
 		margin: 1em;
 		text-align: center;
-		padding: .3rem .5rem .3rem 1rem;
+		padding: .3rem .5rem .3rem 1.5rem;
 		border-radius: 0.33em;
+
+		.drop-down--arrow{
+			position: relative;
+			margin: 0 0 0 auto;
+			align-self: center;
+			width: 20px;
+			height: 20px;
+			border-left: 1px solid #fff;
+			background: url(../images/menu-open-arrow.png) no-repeat 98% 50%;
+
+
+		}
 	}
 
-	.drop-down--arrow{
-		align-self: center;
-		width: 20px;
-		height: 20px;
-		float: right;
-		border-left: 1px solid #fff;
-		margin-left: 1rem;
-		background: url(../images/menu-open-arrow.png) no-repeat 98% 50%;
-	}
+
 
 	.button-container--row{
 		display: flex;
@@ -84,5 +90,8 @@
 
 		.btn--drop-down{
 			padding-right: .5rem;
+			.drop-down--arrow{
+				margin: 0 0 0 1rem;
+			}
 		}
 	}

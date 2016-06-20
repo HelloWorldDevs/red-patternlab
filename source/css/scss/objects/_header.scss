@@ -67,6 +67,20 @@
 
 
 .header-template{
+	.btn{
+		// text-transform: uppercase;
+		font-weight: lighter;
+		border-color: rgb(80, 163, 200) rgb(41, 124, 180) rgb(8, 63, 111);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, rgb(114, 198, 228)), to(rgb(12, 95, 165)));
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+		&:hover{
+				color: white;
+				box-shadow: rgb(203, 233, 247) 0px 0px 7px;
+				transition: all 100ms;
+				background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(175, 194, 207)), color-stop(0.5, rgb(83, 114, 136)), color-stop(0.5, rgb(69, 102, 124)), to(rgb(44, 82, 107)))
+		}
+	}
 
 	.row--input_submit{
 		.btn{
@@ -89,23 +103,12 @@
 			font-size: .8rem;
 			padding: .5rem;
 			height: 1.8rem;
-			line-height: .6rem;
-			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(133, 141, 149)), color-stop(0.5, rgb(70, 80, 91)), color-stop(0.5, rgb(56, 66, 77)), to(rgb(28, 39, 51)));
-		}
-		.btn:hover{
-			box-shadow: rgb(203, 233, 247) 0px 0px 7px;
-		    transition: all 100ms;
-		    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(175, 194, 207)), color-stop(0.5, rgb(83, 114, 136)), color-stop(0.5, rgb(69, 102, 124)), to(rgb(44, 82, 107)))
 		}
 	}
 
 
 .row--input_submit{
 	  align-self: baseline;
-
-	.btn{
-		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#014a7d), to(#3399cc));
-	}
 }
 
 

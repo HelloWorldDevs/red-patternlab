@@ -1,8 +1,32 @@
 {% if form_select %}
-  {% block data_select %}
+  {% block form_select %}
   <a class="{{select_classes}}">{{legend.title}}</a>
   {% endblock %}
 {% endif %}
+
+{% if form_select_second %}
+  {% block form_select_second %}
+  <div>
+    <label>{{text}}</label>
+    <select class="{{select_classes}}">
+      <option>{{text}}</option>
+      <option>{{text}}</option>
+      <option>{{text}}</option>
+    </select>
+  </div>
+  {% endblock %}
+{% endif %}
+
+{% if form_select_date %}
+  {% block form_select_date %}
+  <div>
+    <label class="{{label_classes}}">{{text}}</label>
+    <select class="{{select_classes}}">
+    </select>
+  </div>
+  {% endblock %}
+{% endif %}
+
 
 {% if form_data_select %}
   {% block form_data_select %}
@@ -23,7 +47,7 @@
 {% if form_data_pagination %}
   {% block form_data_pagination %}
 <div class="{{div_classes}}">
-  <a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-180.png);">First</a>
-  <a class="{{pagination}}" style="background-image: url(../../images/control-180.png);" tabindex="0">Previous</a><span><a tabindex="0">1</a></span><a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-180.png);">Next</a><a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-180.png);">Last</a></div>
+  <a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-double-180.png);">arrow</a>
+  <a class="{{pagination}}" style="background-image: url(../../images/control-180.png);" tabindex="0">arrow</a><span><a tabindex="0">1</a></span><a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control.png);">arrow</a><a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-double.png);">arrow</a></div>
   {% endblock %}
 {% endif %}

@@ -12,6 +12,6 @@
 
 {% if button_drop_down %}
   {% block button_drop_down %}
-    <div><a href="{{url}}" class="{{button_classes}}">{{ text }}<div class="{{drop_down_arrow}}"></div></a></div>
+    <a href="{{url}}" class="{{button_classes}}">{{ text }}<div class="{{drop_down_arrow}}"></div></a>
   {% endblock %}
 {% endif %}
