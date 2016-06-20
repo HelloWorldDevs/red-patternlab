@@ -1,4 +1,5 @@
 {
+  "section_login" : true,
   "div_classes": "container--border-padded",
   "div_classes_second": "container--white clearfix container--rounded",
   "header_classes":"header-topround header--white text-center header--backgroundblue",

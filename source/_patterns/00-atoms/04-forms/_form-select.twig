@@ -1,1 +1,29 @@
-<a class="{{select_classes}}">{{legend.title}}</a>
+{% if form_select %}
+  {% block data_select %}
+  <a class="{{select_classes}}">{{legend.title}}</a>
+  {% endblock %}
+{% endif %}
+
+{% if form_data_select %}
+  {% block form_data_select %}
+    <div class="{{div_classes}}">
+      <label>Show
+        <select size="1">
+          <option value="10">10</option>
+          <option value="25" selected="selected">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select> entries</label>
+      </div>
+  {% endblock %}
+{% endif %}
+
+
+
+{% if form_data_pagination %}
+  {% block form_data_pagination %}
+<div class="{{div_classes}}">
+  <a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-180.png);">First</a>
+  <a class="{{pagination}}" style="background-image: url(../../images/control-180.png);" tabindex="0">Previous</a><span><a tabindex="0">1</a></span><a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-180.png);">Next</a><a class="{{pagination}}" tabindex="0" style="background-image: url(../../images/control-180.png);">Last</a></div>
+  {% endblock %}
+{% endif %}

@@ -400,21 +400,63 @@ input[type="search"]::-webkit-search-decoration {
 /*------------------------------------*    $Table
 \*------------------------------------*/
 table {
+  display: table;
   border-collapse: collapse;
-  border-spacing: 0;
-  border: 1px solid #808080;
   width: 100%;
 }
 
+tr {
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 th {
+  font-size: .9rem;
+  vertical-align: middle;
   text-align: left;
-  border: 1px solid #808080;
-  padding: 0.2em;
+  padding: 0.1em 1.5em .1em 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#a4a4a4));
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  border-top: 1px solid white;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #828282;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+tr:nth-child(even) td {
+  background: #e6e6e6;
 }
 
 td {
-  border: 1px solid #808080;
-  padding: 0.2em;
+  border: none;
+  background: #f2f2f2;
+  vertical-align: top;
+  text-align: left;
+  padding: 0.1em 2em .1em .5rem;
+  border-left: 1px dotted #333333;
+  line-height: 1.25em;
+}
+
+td:hover {
+  background: #d1e5ef;
+}
+
+.td--actions {
+  text-align: center;
+}
+
+.th__checkbox {
+  padding: 0.5em 0.75em;
+  vertical-align: middle;
+}
+
+.td__checkbox {
+  padding: 0.5em 0.75em;
+  vertical-align: middle;
 }
 
 .animate-fade {
@@ -877,6 +919,25 @@ body {
   background-color: #70828f;
 }
 
+.section--table .btn--drop-down {
+  position: absolute;
+  top: 1.25rem;
+}
+
+.section--table .row--input_submit input {
+  margin-right: 1rem;
+  width: 10rem;
+}
+
+.select--pagination {
+  min-width: auto;
+  width: 16px;
+  overflow: hidden;
+  text-indent: 100px;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
 /*------------------------------------*    $PAGE STRUCTURE
 \*------------------------------------*/
 .header--main_nav {
@@ -997,6 +1058,11 @@ body {
 
 /*------------------------------------*    $RED
 \*------------------------------------*/
+.nav--top-search {
+  border-bottom: 1px solid #999999;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.88, #e5e5e5), to(#d8d8d8));
+}
+
 .icon--image {
   line-height: 0;
 }
@@ -1157,6 +1223,34 @@ body {
 
 /*------------------------------------*    $COMPONENTS
 \*------------------------------------*/
+.th--sort {
+  display: block;
+  float: left;
+  border-right: 1px solid #dddddd;
+  margin-right: .5rem;
+}
+
+.th--sort-up {
+  display: block;
+  width: 13px;
+  height: 14px;
+  background: url(../images/table-sort-arrows.png) no-repeat;
+  border-right: 1px solid #999999;
+  background-position: 0 1px;
+  border-bottom: 1px solid #828282;
+}
+
+.th--sort-down {
+  display: block;
+  width: 13px;
+  height: 14px;
+  background: url(../images/table-sort-arrows.png) no-repeat;
+  border-right: 1px solid #999999;
+  background-position: 0 bottom;
+  border-top: 1px solid white;
+  background-position: 0 bottom;
+}
+
 /* Icon Font */
 @font-face {
   font-family: 'icons';

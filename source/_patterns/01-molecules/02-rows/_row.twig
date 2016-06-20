@@ -41,3 +41,12 @@
     </div>
   {% endblock %}
 {% endif %}
+
+
+{% if row_filter %}
+  {% block row_filter %}
+    <div class="{{div_classes}}">
+      {% include form_data_select %}
+    </div>
+  {% endblock %}
+{% endif %}

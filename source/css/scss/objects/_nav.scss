@@ -2,6 +2,12 @@
     $RED
 \*------------------------------------*/
 
+.nav--top-search{
+	border-bottom: 1px solid rgb(153, 153, 153);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.88, rgb(229, 229, 229)), to(rgb(216, 216, 216)));
+	
+}
+
 .icon--image{
 	line-height: 0;
 }

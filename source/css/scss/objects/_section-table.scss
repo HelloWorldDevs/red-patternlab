@@ -1,0 +1,29 @@
+
+.section--table{
+
+  .btn--drop-down{
+    position: absolute;
+    top: 1.25rem;
+  }
+
+  .row--input_submit {
+    input{
+      margin-right: 1rem;
+      width: 10rem;
+    }
+  }
+
+  .select--data-select{
+
+  }
+
+}
+
+.select--pagination{
+  min-width: auto;
+  width: 16px;
+  overflow: hidden;
+  text-indent: 100px;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}

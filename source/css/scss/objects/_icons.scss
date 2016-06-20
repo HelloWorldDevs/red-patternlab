@@ -1,5 +1,31 @@
+.th--sort{
+	display: block;
+	float: left;
+	// margin: -0.583em 0.5em -0.583em -0.75em;
+	border-right: 1px solid #dddddd;
+	margin-right: .5rem;
+}
 
+.th--sort-up{
+	display: block;
+	width: 13px;
+	height: 14px;
+	background: url(../images/table-sort-arrows.png) no-repeat;
+	border-right: 1px solid #999999;
+	background-position: 0 1px;
+  border-bottom: 1px solid #828282;
+}
 
+.th--sort-down{
+	display: block;
+	width: 13px;
+	height: 14px;
+	background: url(../images/table-sort-arrows.png) no-repeat;
+	border-right: 1px solid #999999;
+	background-position: 0 bottom;
+	border-top: 1px solid white;
+  background-position: 0 bottom;
+}
 
 
 /* Icon Font */

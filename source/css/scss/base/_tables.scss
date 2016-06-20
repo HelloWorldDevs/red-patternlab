@@ -1,18 +1,66 @@
 /*------------------------------------*\
     $Table
 \*------------------------------------*/
-table {
-	border-collapse: collapse; 
-	border-spacing: 0; 
-	border: 1px solid $gray;
-	width: 100%;
-}
-th {
-	text-align: left;
-	border: 1px solid $gray;
-	padding: 0.2em;
-}
-td {
-	border: 1px solid $gray;
-	padding: 0.2em;
-}
+
+		table{
+			display: table;
+			border-collapse:collapse;
+			width: 100%;
+		}
+
+		tr{
+			border: none;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+	th{
+			font-size: .9rem;
+			vertical-align: middle;
+	    text-align: left;
+	    padding: 0.1em 1.5em .1em 0;
+	    background: -webkit-gradient(linear,left top, left bottom, from(#cccccc),to(#a4a4a4));
+			color: white;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+	    border-top: 1px solid white;
+	    border-left: 1px solid #dddddd;
+	    border-right: 1px solid #999999;
+	    border-bottom: 1px solid #828282;
+			white-space: nowrap;
+  		overflow: hidden;
+	}
+
+	tr:nth-child(even){
+		td {
+	    background: #e6e6e6;
+		}
+	}
+
+	td{
+		// border: 1px solid red;
+		border: none;
+		background: #f2f2f2;
+		vertical-align: top;
+		text-align: left;
+		padding: 0.1em 2em .1em .5rem;
+		border-left: 1px dotted #333333;
+		line-height: 1.25em;
+		&:hover{
+			    background: #d1e5ef;
+		}
+	}
+
+	.td--actions{
+		text-align:center;
+
+	}
+
+	.th__checkbox {
+		padding: 0.5em 0.75em;
+		vertical-align: middle;
+	}
+
+	.td__checkbox {
+		padding: 0.5em 0.75em;
+		vertical-align: middle;
+	}

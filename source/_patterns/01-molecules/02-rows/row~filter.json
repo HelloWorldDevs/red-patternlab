@@ -1,0 +1,5 @@
+{
+  "row_filter" : true,
+  "div_classes" : "row--filter",
+  "form_data_select" : "atoms-form-select-data-select"
+}

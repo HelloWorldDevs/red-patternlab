@@ -1,0 +1,5 @@
+{
+  "table": true,
+  "table_thead" : "molecules-table-thead",
+  "table_tr" : "molecules-table-tr"
+}

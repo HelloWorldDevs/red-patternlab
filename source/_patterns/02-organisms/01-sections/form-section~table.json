@@ -1,0 +1,8 @@
+{
+  "section_table" : true,
+  "border_classes" : "container--border-padded section--table",
+  "button_drop_down" : "atoms-button-drop-down",
+  "div_classes" : "nav--top-search",
+  "table" : "organisms-table-body",
+  "row_input_submit" : "molecules-row-input-submit"
+}

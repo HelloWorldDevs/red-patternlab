@@ -1,0 +1,12 @@
+{% if table %}
+  {% block table %}
+    <table>
+      {% include table_thead %}
+      {% include table_tr %}
+      {% include table_tr %}
+      {% include table_tr %}
+      {% include table_tr %}
+      {% include table_tr %}
+    </table>
+  {% endblock %}
+{% endif %}

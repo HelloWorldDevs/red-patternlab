@@ -1,15 +1,34 @@
-<div class="block block-inset">
-    {% include button_large %}
-    <div class="{{div_classes}}">
-      <div class="{{div_classes_second}}">
-          <h1 class="{{header_classes}}">{{title}}</h1>
-          {% include form_field_login %}
-          {% include form_select %}
-          <span class="{{button_classes}}">
-          {% include button_small %}
-          </span>
-          {% include drop_down_submit_input %}
-      </div>
-      </div>
+{% if section_login %}
+ {% block section_login %}
+  <div class="block block-inset">
       {% include button_large %}
-</div>
+      <div class="{{div_classes}}">
+        <div class="{{div_classes_second}}">
+            <h1 class="{{header_classes}}">{{title}}</h1>
+            {% include form_field_login %}
+            {% include form_select %}
+            <span class="{{button_classes}}">
+            {% include button_small %}
+            </span>
+            {% include drop_down_submit_input %}
+        </div>
+        </div>
+        {% include button_large %}
+  </div>
+  {% endblock %}
+{% endif %}
+
+
+
+
+{% if section_table %}
+ {% block section_table %}
+ <div class="{{border_classes}}">
+   {% include button_drop_down %}
+   <div class="{{div_classes}}">
+       {% include row_input_submit %}
+   </div>
+    {% include table %}
+ </div>
+  {% endblock %}
+{% endif %}
