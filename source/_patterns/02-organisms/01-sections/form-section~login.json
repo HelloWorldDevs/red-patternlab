@@ -5,6 +5,7 @@
   "header_classes":"header-topround text-center header--backgroundblue",
   "form_field_login": "molecules-form-field-flex-input",
   "form_select" : "atoms-form-select-select",
+  "button_icon" : "atoms-button-icon",
   "button_large" : "atoms-button-large",
   "button_small": "atoms-button-small",
   "button_classes" : "element-right",

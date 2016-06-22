@@ -846,7 +846,19 @@ td {
 }
 
 .login-template h1 {
+  color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(#6dc3e6), to(#0c5fa3));
+}
+
+.login-template .btn {
+  border-color: #50a3c8 #297cb4 #083f6f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, #72c6e4), to(#0c5fa5));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.login-template .btn:hover {
+  color: white;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.05, #2bcef3), to(#057fdb));
 }
 
 .login-template .btn--small {
@@ -857,6 +869,26 @@ td {
 
 .login-template .btn--small:hover {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, #2bcef3), to(#057fdb));
+}
+
+.login-template .btn--icon {
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#555));
+  color: white;
+}
+
+.login-template .btn--icon:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#555));
+  color: white;
+}
+
+.login-template .alert .btn {
+  background: #ca3535;
+  background: -moz-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ca3535), color-stop(98%, #790000));
+  background: -webkit-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: -o-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: -ms-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: linear-gradient(to bottom, #ca3535 0%, #790000 98%);
 }
 
 .login-template input {
@@ -1626,6 +1658,28 @@ td {
 
 .button-container--row .btn--drop-down .drop-down--arrow {
   margin: 0 0 0 1rem;
+}
+
+.btn--icon {
+  height: 5rem;
+  line-height: 2.5rem;
+  vertical-align: middle;
+}
+
+.btn--icon img {
+  height: 1.6rem;
+  float: left;
+  margin-top: .9rem;
+}
+
+.btn--alert {
+  background: #ca3535;
+  background: -moz-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ca3535), color-stop(98%, #790000));
+  background: -webkit-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: -o-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: -ms-linear-gradient(top, #ca3535 0%, #790000 98%);
+  background: linear-gradient(to bottom, #ca3535 0%, #790000 98%);
 }
 
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */

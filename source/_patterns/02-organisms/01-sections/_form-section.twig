@@ -1,7 +1,7 @@
 {% if section_login %}
  {% block section_login %}
   <div class="block block-inset">
-      {% include button_large %}
+      {% include button_icon %}
       <div class="{{div_classes}}">
         <div class="{{div_classes_second}}">
             <h1 class="{{header_classes}}">{{title}}</h1>
@@ -13,7 +13,9 @@
             {% include drop_down_submit_input %}
         </div>
         </div>
-        {% include button_large %}
+
+          {% include button_large %}
+
   </div>
   {% endblock %}
 {% endif %}

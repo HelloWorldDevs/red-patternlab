@@ -1,0 +1,7 @@
+{
+  "button_icon" : true,
+  "button_icon_text" : "Button Info",
+  "button_classes" : "btn--wide btn btn--icon",
+  "img_src" : "../../images/settings.png",
+  "border_classes": "container--border-padded"
+}
