@@ -45,6 +45,21 @@ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.8
     $NAVIGATION
 \*------------------------------------*/
 
+////////////////////////////////////////
+
+.sub-nav {
+	.menu-item{
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.btn {
+		background-color: white;
+		color: $gray-dark;
+		height: 20px;
+	}
+}
+
+////////////////////////////////////////
 .nav {
 	clear: both;
 	overflow: hidden;

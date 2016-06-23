@@ -1,0 +1,7 @@
+{
+  "status_bar" : true,
+  "div_class" : "header--status_bar",
+  "log_out_btn" : "atoms-button-small",
+  "logged_in" : "atoms-text-logged-in",
+  "button_classes": "btn--small btn log-out"
+}

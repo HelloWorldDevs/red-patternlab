@@ -1,8 +1,14 @@
 
+.logo {
+	float: left;
+	max-width: 8rem;
+	margin: 0.4rem;
+}
+
 .header--main_nav{
 	display: flex;
 	padding: 0 5rem 0 3rem;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#014a7d), to(#3399cc));
+	background: $blue-gradient;
 	height: 6rem;
 
 	.row--nav-icons{
@@ -50,7 +56,7 @@
 	align-items: center;
 	color: white;
 	border-top: 1px solid rgb(255, 101, 0);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(48, 49, 53)), color-stop(0.06, rgb(60, 61, 66)), color-stop(0.18, rgb(64, 68, 71)), color-stop(0.5, rgb(52, 56, 59)), color-stop(0.5, rgb(37, 41, 44)), color-stop(0.63, rgb(26, 27, 31)), to(black));
+	background: $black-gradient;
 
 	.button-container--row{
 		p{
@@ -62,6 +68,22 @@
 		align-items: baseline;
 	}
 
+}
+
+.header--status_bar{
+	height: 2rem;
+	background: $white-gradient;
+	display: flex;
+	p {
+		position: relative;
+		left: 50%;
+	}
+	.btn {
+		position: relative;
+		bottom: 8px;
+		font-size: 0.6rem;
+		background: $red-gradient;
+	}
 }
 
 
@@ -98,11 +120,20 @@
 		}
 	}
 
+
 	.button-container--row{
 		.btn{
 			font-size: .8rem;
 			padding: .5rem;
 			height: 1.8rem;
+			line-height: .6rem;
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(133, 141, 149)), color-stop(0.5, rgb(70, 80, 91)), color-stop(0.5, rgb(56, 66, 77)), to(rgb(28, 39, 51)));
+		}
+		.btn:hover{
+			box-shadow: rgb(203, 233, 247) 0px 0px 7px;
+		    transition: all 100ms;
+		    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(175, 194, 207)), color-stop(0.5, rgb(83, 114, 136)), color-stop(0.5, rgb(69, 102, 124)), to(rgb(44, 82, 107)));
+
 		}
 	}
 
@@ -113,6 +144,7 @@
 
 
 }
+
 
 
 @media all and (max-width: 670px ){

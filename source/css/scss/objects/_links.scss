@@ -1,0 +1,16 @@
+.dashboard-links {
+  width: 300px;
+  .img-class{
+    position: relative;
+    left: 45px;
+    top: 35px;
+  }
+  .btn-class{
+    position: relative;
+    left: 120px;
+  }
+  &.orders-group {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed black;
+  }
+}

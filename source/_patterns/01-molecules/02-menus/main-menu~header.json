@@ -1,0 +1,9 @@
+{
+  "home": "home",
+  "orders": "orders",
+  "users": "users",
+  "offices": "offices",
+  "applications": "application settings",
+  "ul_class": "menu",
+  "menu_class": "menu-item"
+}

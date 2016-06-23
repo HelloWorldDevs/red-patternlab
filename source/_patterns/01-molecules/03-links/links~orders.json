@@ -1,0 +1,10 @@
+{
+  "img": "../../images/write.png",
+  "button": "View Orders",
+  "list": "Orders > List",
+  "classes": "orders-group dashboard-links",
+  "img_class": "img-class",
+  "btn_class": "btn-class",
+  "link_class": "link-class",
+  "p_class": "list"
+}

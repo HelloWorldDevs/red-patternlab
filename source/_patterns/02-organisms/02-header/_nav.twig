@@ -16,3 +16,12 @@
   {% endblock %}
   </div>
 {% endif %}
+
+ {% if status_bar %}
+  {% block status_bar %}
+  <div class="{{div_class}}">
+       {% include logged_in %}
+       {% include log_out_btn %}
+  {% endblock %}
+  </div>
+ {% endif %}

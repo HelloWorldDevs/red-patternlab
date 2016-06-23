@@ -1,0 +1,6 @@
+{
+  "status": "atoms-logged-in-text",
+  "status_bar": "status-bar",
+  "status_group": "status-group",
+  "logout_btn": "atoms-button-logout"
+}
