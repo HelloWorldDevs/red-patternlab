@@ -1,0 +1,6 @@
+{
+  "th_sort" : true,
+  "sort_span" : "th--sort",
+  "th_sort_up": "th--sort-up",
+  "th_sort_down" : "th--sort-down"
+}

@@ -1,0 +1,8 @@
+{
+  "td_actions" : true,
+  "td_classes" : "td--actions",
+  "img_1" : "../../images/calendar-day.png",
+  "img_2" : "../../images/document-text.png",
+  "img_3" : "../../images/pencil.png",
+  "img_4" : "../../images/cross-circle.png"
+}

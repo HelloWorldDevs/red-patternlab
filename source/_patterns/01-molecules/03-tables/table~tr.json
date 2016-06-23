@@ -1,0 +1,6 @@
+{
+  "table_tr" : true,
+  "table_td_checkbox" : "atoms-table-td-checkbox",
+  "table_td" : "atoms-table-td",
+  "table_td_actions" : "atoms-table-td-actions"
+}

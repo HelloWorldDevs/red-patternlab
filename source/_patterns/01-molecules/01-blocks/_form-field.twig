@@ -1,6 +1,10 @@
-<form action="{{ url }}" method="post" class="{{form_classes}}">
-    <fieldset class="{{feild_classes}}">
-    {% include children %}
-    {% include children %}
-    </fieldset>
-</form>
+{% if form_feild_flex_input %}
+  {% block form_login %}
+  <form action="{{ url }}" method="post" class="{{form_classes}}">
+      <fieldset class="{{feild_classes}}">
+      {% include children %}
+      {% include children %}
+      </fieldset>
+  </form>
+  {% endblock %}
+{% endif %}

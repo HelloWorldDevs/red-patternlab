@@ -1,0 +1,5 @@
+{
+    "form_select_date" : true,
+    "label_classes" : "form--label-date",
+    "select_classes" : "form--select-date"
+}

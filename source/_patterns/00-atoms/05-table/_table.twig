@@ -1,0 +1,46 @@
+{% if th_checkbox %}
+  {% block th_checkbox %}
+  <th class="{{th_classes}}">
+    <input type="checkbox" />
+  </th>
+  {% endblock %}
+{% endif %}
+
+{% if th_sort %}
+  {% block th_sort %}
+  <th>
+    <span class="{{ sort_span }}">
+      <a href="{{url}}" title="Sort up" class="{{th_sort_up}}"></a>
+      <a href="#" title="Sort down" class="{{th_sort_down}}"></a>
+    </span>
+    Data
+  </th>
+  {% endblock %}
+{% endif %}
+
+{% if td_checkbox %}
+  {% block td_checkbox %}
+  <td class="{{td_classes}}">
+    <input type="checkbox" />
+  </td>
+  {% endblock %}
+{% endif %}
+
+{% if td %}
+  {% block td %}
+  <td class="{{td_classes}}">
+    {{text}}
+  </td>
+  {% endblock %}
+{% endif %}
+
+{% if td_actions %}
+  {% block td_actions %}
+  <td class="{{td_classes}}">
+    <img src="{{img_1}}"></img>
+    <img src="{{img_2}}"></img>
+    <img src="{{img_3}}"></img>
+    <img src="{{img_4}}"></img>
+  </td>
+  {% endblock %}
+{% endif %}

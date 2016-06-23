@@ -1,21 +1,3 @@
-//BASE
-$white-egg: #E9E9E9;
-$gray-background: #70828f;
-$gray-light-4: #BFC7CC;
-$gray-dark: #333333;
-$gray-darker : #505050;
-$blue-light: #368BC0;
-$blue-lighter: #57ACD7;
-$blue-dark: #1669AA;
-$red-light : #B12525;
-$red-dark : #830707;
-
-
-
-
-
-//LAYOUT
-
 
 .container--border-padded{
   margin: 2em 0;
@@ -65,17 +47,51 @@ $red-dark : #830707;
 //MODULES
 
 .login-template{
+  h1{
+    color: #fff;
+    background: -webkit-gradient(linear,left top, left bottom,from(#6dc3e6),to(#0c5fa3));
+  }
+
+  .btn{
+    border-color: rgb(80, 163, 200) rgb(41, 124, 180) rgb(8, 63, 111);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, rgb(114, 198, 228)), to(rgb(12, 95, 165)));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+    &:hover{
+      color: white;
+      background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.05, rgb(43, 206, 243)), to(rgb(5, 127, 219)));
+    }
+  }
   .btn--small{
     background: -webkit-gradient(linear,left top, left bottom,from(#6dc3e6),to(#0c5fa3));
     height: 2rem;
     line-height: 0;
   }
 
-
   .btn--small:hover{
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, rgb(43, 206, 243)), to(rgb(5, 127, 219)));
   }
+  .btn--icon{
+    background: -webkit-gradient(linear,left top, left bottom,from(#222),to(#555));
+    color: white;
 
+    &:hover{
+      background: -webkit-gradient(linear,left top, left bottom,from(#222),to(#555));
+      color: white;
+    }
+  }
+
+  .alert{
+    .btn{
+      background: #ca3535;
+  		background: -moz-linear-gradient(top, #ca3535 0%, #790000 98%);
+  		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ca3535), color-stop(98%,#790000));
+  		background: -webkit-linear-gradient(top, #ca3535 0%,#790000 98%);
+  		background: -o-linear-gradient(top, #ca3535 0%,#790000 98%);
+  		background: -ms-linear-gradient(top, #ca3535 0%,#790000 98%);
+  		background: linear-gradient(to bottom, #ca3535 0%,#790000 98%);
+    }
+  }
   input {
     height: 2rem;
   }
@@ -84,7 +100,7 @@ $red-dark : #830707;
 .header-topround{@include top-round(inherit); }
 
 .header--backgroundblue{
-  background: -webkit-gradient(linear,left top, left bottom,from(#6dc3e6),to(#0c5fa3));
+
 }
 
 .header--white{
@@ -181,37 +197,8 @@ margin: 1em .5em;
 }
 
 
-
-// THEME
-//fonts
-$header-font : "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
-$primary-font : Verdana, Arial, Helvetica, sans-serif;
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-  font-style: $header-font;
-}
-
-body{
-  font-style: $primary-font;
-}
-
-.demo-animate{
-  background-color: green;
-}
-
-
 @media (max-width: 900px){
   .container-halfwidth{
     width: 70%;
   }
-}
-
-
-body {
-  background-color: $gray-background;
 }

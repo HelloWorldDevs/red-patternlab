@@ -1,0 +1,6 @@
+{
+  "template_header" : "templates-header-nav",
+  "div_classes":"container element-center",
+  "form_section_filter" : "organisms-form-section-filter",
+  "form_section_table" : "organisms-form-section-table"
+}

@@ -1,15 +1,54 @@
-<div class="block block-inset">
-    {% include button_large %}
+{% if section_login %}
+ {% block section_login %}
+  <div class="block block-inset">
+      {% include button_icon %}
+      <div class="{{div_classes}}">
+        <div class="{{div_classes_second}}">
+            <h1 class="{{header_classes}}">{{title}}</h1>
+            {% include form_field_login %}
+            {% include form_select %}
+            <span class="{{button_classes}}">
+            {% include button_small %}
+            </span>
+            {% include drop_down_submit_input %}
+        </div>
+        </div>
+          {% include button_large %}
+  </div>
+  {% endblock %}
+{% endif %}
+
+
+{% if section_table %}
+ {% block section_table %}
+ <div class="{{border_classes}}">
+   {% include button_drop_down %}
+   <div class="{{div_classes}}">
+       {% include row_input_submit %}
+   </div>
+    {% include table %}
+    {% include row_filter %}
+ </div>
+  {% endblock %}
+{% endif %}
+
+
+{% if form_section_filter %}
+  {% block form_section_filter %}
+  <div class="{{border_classes}}">
+    {% include button_drop_down %}
     <div class="{{div_classes}}">
-      <div class="{{div_classes_second}}">
-          <h1 class="{{header_classes}}">{{title}}</h1>
-          {% include form_field_login %}
-          {% include form_select %}
-          <span class="{{button_classes}}">
-          {% include button_small %}
-          </span>
-          {% include drop_down_submit_input %}
+        <form action="{{ url }}" method="post" class="{{form_classes}}">
+            <fieldset class="{{feild_classes}}">
+            <div class="{{container_row}}">
+              {% include row_select_two %}
+              {% include row_date_range %}
+            </div>
+            {% include row_select_four %}
+            </fieldset>
+        </form>
       </div>
-      </div>
-      {% include button_large %}
-</div>
+      {% include row_filter_simple %}
+  </div>
+  {% endblock %}
+{% endif %}

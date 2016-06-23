@@ -1,3 +1,42 @@
+
+/*------------------------------------*\
+    $RED
+\*------------------------------------*/
+
+.form--select{
+	width: 10rem;
+	margin: .1rem .5em;
+	height: 1rem;
+}
+
+.form--select-date{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 10rem;
+	margin: .1rem .5em;
+	height: 2rem;
+	border: .1rem solid gray;
+	padding: .1rem 2rem .1rem .5rem;
+	font-size: .9em;
+	font-weight: 100;
+	cursor: pointer;
+	display: block;
+	border-radius: 0.33em;
+	color: black;
+	background: url(../images/calendar-day.png) no-repeat 95% 60%;
+	background-color: $white-egg;
+}
+
+label{
+	margin: 0 .5em;
+}
+
+.select-row{
+	display: -webkit-inline-box;
+}
+
+
 /*------------------------------------*\
     $FORMS
 \*------------------------------------*/
@@ -14,7 +53,6 @@ fieldset {
 
 label {
 	display: block;
-	padding-bottom: $space-half;
 }
 
 button, input, select, textarea {

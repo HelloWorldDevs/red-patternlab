@@ -12,6 +12,13 @@
 
 {% if button_drop_down %}
   {% block button_drop_down %}
-    <div><a href="{{url}}" class="{{button_classes}}">{{ text }}<div class="{{drop_down_arrow}}"></div></a></div>
+    <a href="{{url}}" class="{{button_classes}}">{{ text }}<div class="{{drop_down_arrow}}"></div></a>
+  {% endblock %}
+{% endif %}
+
+
+{% if button_icon %}
+  {% block button_icon %}
+    <p class="{{border_classes}}"><a href="{{url}}" class="{{button_classes}}"><img src="{{img_src}}" />{{ button_icon_text }}</a></p>
   {% endblock %}
 {% endif %}

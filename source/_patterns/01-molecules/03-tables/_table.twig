@@ -1,0 +1,27 @@
+{% if table_thead %}
+  {% block table_thead %}
+  <thead>
+      {% include table_th_checkbox %}
+      {% include table_th_sort %}
+      {% include table_th_sort %}
+      {% include table_th_sort %}
+      {% include table_th_sort %}
+      {% include table_th_sort %}
+      {% include table_th_sort %}
+  </thead>
+  {% endblock %}
+{% endif %}
+
+{% if table_tr %}
+  {% block table_tr %}
+  <tr>
+      {% include table_td_checkbox %}
+      {% include table_td %}
+      {% include table_td %}
+      {% include table_td %}
+      {% include table_td %}
+      {% include table_td %}
+      {% include table_td_actions %}
+  </tr>
+  {% endblock %}
+{% endif %}

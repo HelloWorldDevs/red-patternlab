@@ -1,0 +1,5 @@
+  {
+    "form_data_pagination": true,
+    "div_classes": "paginat-select",
+    "pagination" : "paginat-select__anchor"
+  }
