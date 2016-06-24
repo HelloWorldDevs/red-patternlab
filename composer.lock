@@ -379,24 +379,25 @@
         },
         {
             "name": "pattern-lab/core",
-            "version": "v2.2.1",
+            "version": "v2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pattern-lab/patternlab-php-core.git",
-                "reference": "585924c97ce492810b12e355eb073d895eaee7ae"
+                "reference": "5f9344706c243c990178af26cf9795376e410e9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pattern-lab/patternlab-php-core/zipball/585924c97ce492810b12e355eb073d895eaee7ae",
-                "reference": "585924c97ce492810b12e355eb073d895eaee7ae",
+                "url": "https://api.github.com/repos/pattern-lab/patternlab-php-core/zipball/5f9344706c243c990178af26cf9795376e410e9d",
+                "reference": "5f9344706c243c990178af26cf9795376e410e9d",
                 "shasum": ""
             },
             "require": {
                 "alchemy/zippy": "~0.2.1",
                 "kevinlebrun/colors.php": "~0.4.1",
                 "michelf/php-markdown": "~1.5",
-                "php": ">=5.3.6",
+                "php": ">=5.4",
                 "seld/jsonlint": "~1.3",
+                "shudrum/array-finder": "^1.0.0",
                 "symfony/event-dispatcher": "~2.6",
                 "symfony/filesystem": "~2.6.4",
                 "symfony/finder": "~2.6",
@@ -434,7 +435,7 @@
                 "style guide",
                 "styleguide"
             ],
-            "time": "2016-06-01 18:26:32"
+            "time": "2016-06-21 18:00:09"
         },
         {
             "name": "pattern-lab/drupal-twig-components",
@@ -771,6 +772,46 @@
                 "validator"
             ],
             "time": "2015-11-21 02:21:41"
+        },
+        {
+            "name": "shudrum/array-finder",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Shudrum/ArrayFinder.git",
+                "reference": "42380f01017371b7a1e8e02b0bf12cb534e454d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Shudrum/ArrayFinder/zipball/42380f01017371b7a1e8e02b0bf12cb534e454d7",
+                "reference": "42380f01017371b7a1e8e02b0bf12cb534e454d7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Shudrum\\Component\\ArrayFinder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julien Martin",
+                    "email": "martin.julien82@gmail.com"
+                }
+            ],
+            "description": "ArrayFinder component",
+            "homepage": "https://github.com/Shudrum/ArrayFinder",
+            "time": "2016-02-01 12:23:32"
         },
         {
             "name": "symfony/event-dispatcher",
