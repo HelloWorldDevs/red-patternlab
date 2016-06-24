@@ -13,8 +13,6 @@ var sassOptions = {
   outputStyle: 'expanded'
 };
 
-
-
 // Sass
 gulp.task('sass', function () {
   console.log('changed detected')

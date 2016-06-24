@@ -1200,20 +1200,6 @@ td {
   align-items: baseline;
 }
 
-
-.header-template .btn {
-  font-weight: lighter;
-  border-color: #50a3c8 #297cb4 #083f6f;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, #72c6e4), to(#0c5fa5));
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.header-template .btn:hover {
-  color: white;
-  box-shadow: #cbe9f7 0px 0px 7px;
-  transition: all 100ms;
-  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afc2cf), color-stop(0.5, #537288), color-stop(0.5, #45667c), to(#2c526b));
-
 .header--status_bar {
   height: 2rem;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cfcfcf));
@@ -1230,7 +1216,20 @@ td {
   bottom: 8px;
   font-size: 0.6rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#ca3535), to(#790000));
+}
 
+.header-template .btn {
+  font-weight: lighter;
+  border-color: #50a3c8 #297cb4 #083f6f;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), color-stop(0.03, #72c6e4), to(#0c5fa5));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.header-template .btn:hover {
+  color: white;
+  box-shadow: #cbe9f7 0px 0px 7px;
+  transition: all 100ms;
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afc2cf), color-stop(0.5, #537288), color-stop(0.5, #45667c), to(#2c526b));
 }
 
 .header-template .row--input_submit {
@@ -1255,6 +1254,14 @@ td {
   font-size: .8rem;
   padding: .5rem;
   height: 1.8rem;
+  line-height: .6rem;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#858d95), color-stop(0.5, #46505b), color-stop(0.5, #38424d), to(#1c2733));
+}
+
+.header-template .button-container--row .btn:hover {
+  box-shadow: #cbe9f7 0px 0px 7px;
+  transition: all 100ms;
+  background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgba(109, 192, 229, 0)), color-stop(0.25, rgba(109, 192, 229, 0.298039)), color-stop(0.5, rgba(109, 192, 229, 0.4)), color-stop(0.75, rgba(109, 192, 229, 0.298039)), to(rgba(109, 192, 229, 0))), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afc2cf), color-stop(0.5, #537288), color-stop(0.5, #45667c), to(#2c526b));
 }
 
 .header-template .row--input_submit {
@@ -1316,7 +1323,7 @@ td {
 
 .sub-nav .btn {
   background-color: white;
-  color: #333333;
+  color: #333;
   height: 20px;
 }
 
